@@ -348,7 +348,7 @@ module Bones::Plugins::Gem
     $bones_external_spec = true
 
     config.name               = spec.name
-    config.version            = spec.version
+    config.version            = spec.version.to_s
     config.summary            = spec.summary
     config.authors            = spec.authors
     config.email              = spec.email
